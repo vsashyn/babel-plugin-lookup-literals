@@ -1,4 +1,5 @@
 {
+  "name": "babel-plugin-lookup-literals",
   "version": "0.0.0",
   "description": "",
   "repository": "vsashyn/babel-plugin-lookup-literals",
