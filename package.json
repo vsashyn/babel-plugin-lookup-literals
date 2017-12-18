@@ -20,5 +20,8 @@
   },
   "keywords": [
     "babel-plugin"
-  ]
+  ],
+  "dependencies": {
+    "babel-types": "^6.26.0"
+  }
 }

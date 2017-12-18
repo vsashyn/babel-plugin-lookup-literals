@@ -1,3 +1,5 @@
+import * as types from 'babel-types';
+
 export default function({types: t }) {
     return {
         visitor: {
@@ -5,8 +7,9 @@ export default function({types: t }) {
                 console.log(`Found a JSXText: ${state.file.opts.filename}, ${node.start}, ${node.end}, ${node.value}`);
 
             },
-            JSXText(node, state) {
-                console.log(`Found a JSXText: ${state.file.opts.filename}, ${node.start}, ${node.end}, ${node.value}`);
+            JSXText(value) {
+
+                console.log(`Found a JSXText: ${state.file.opts.filename}, ${value}`);
             }
         }
     }
