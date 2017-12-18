@@ -7,8 +7,7 @@ export default function({types: t }) {
                 console.log(`Found a StringLiteral: ${state.file.opts.filename}, ${path.node.value}`);
 
             },
-            JSXText(value, state) {
-
+            JSXText(path, state) {
                 console.log(`Found a JSXText: ${state.file.opts.filename}, ${path.node.value}`);
             }
         }
