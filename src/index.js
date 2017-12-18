@@ -7,7 +7,7 @@ export default function({types: t }) {
                 console.log(`Found a JSXText: ${state.file.opts.filename}, ${node.start}, ${node.end}, ${node.value}`);
 
             },
-            JSXText(value) {
+            JSXText(value, state) {
 
                 console.log(`Found a JSXText: ${state.file.opts.filename}, ${value}`);
             }
