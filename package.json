@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-lookup-literals",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "",
   "repository": "vsashyn/babel-plugin-lookup-literals",
   "author": "Vitalii Sashyn <sashyn.v@gmail.com>",
