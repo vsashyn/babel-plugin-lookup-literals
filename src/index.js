@@ -9,7 +9,7 @@ export default function({types: t }) {
             },
             JSXText(value, state) {
 
-                console.log(`Found a JSXText: ${state.file.opts.filename}, ${value}`);
+                console.log(`Found a JSXText: ${state.file.opts.filename}, ${path.node.value}`);
             }
         }
     }
