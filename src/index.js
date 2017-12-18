@@ -26,7 +26,7 @@ export default function({types: t }) {
                 }
                 console.log(description.join(','))
             },
-            jSXText(path, options) {
+            JSXText(path, options) {
                 console.log('found a jSXText');
             }
         }
