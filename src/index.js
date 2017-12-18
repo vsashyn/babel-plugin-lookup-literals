@@ -4,11 +4,15 @@ export default function({types: t }) {
     return {
         visitor: {
             StringLiteral(path, state) {
-                console.log(`Found a StringLiteral: ${state.file.opts.filename}, ${path.node.value}`);
+                if (state.opts.trackStringLiteral) {
+                    console.log(`Found a StringLiteral: ${state.file.opts.filename}, ${path.node.value}`);
+                }
 
             },
             JSXText(path, state) {
-                console.log(`Found a JSXText: ${state.file.opts.filename}, ${path.node.value}`);
+                if (state.opts.trackJSXText) {
+                    console.log(`Found a JSXText: ${state.file.opts.filename}, ${path.node.value}`);
+                }
             }
         }
     }
