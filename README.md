@@ -1,6 +1,6 @@
 # babel-plugin-lookup-literals
 
-
+Helps to find string literals in your code. Useful in case of l10n enhancements.
 
 ## Example
 
@@ -32,7 +32,10 @@ $ npm install babel-plugin-lookup-literals
 
 ```json
 {
-  "plugins": ["lookup-literals"]
+  "plugins": ["lookup-literals", {
+                    "trackStringLiteral": false,
+                    "trackJSXText": true
+    }]
 }
 ```
 
@@ -49,3 +52,6 @@ require("babel-core").transform("code", {
   plugins: ["lookup-literals"]
 });
 ```
+### Example
+
+Shows found literals in console. Plugin doesn't change source code.
